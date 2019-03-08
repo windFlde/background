@@ -6,11 +6,15 @@ import com.jk.background.bean.Exprent;
 import java.util.List;
 
 public interface BckMapper {
-    void updateEx();
+    void updateEx(Integer id);
 
-    void addEx();
+    void addEx(Example example);
 
     List<Example> queryEx();
 
     List<Exprent> quertAu();
+
+    Example getEx(Integer id);
+
+    void delEx(String ids);
 }

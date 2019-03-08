@@ -4,10 +4,11 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
-public class Example {
+public class Example implements Serializable {
 
     private Integer id;
     private String em_title;
@@ -20,4 +21,6 @@ public class Example {
     private String em_img;
      String em_mp3;
      String em_content;
+
+     String dt_name;
 }
